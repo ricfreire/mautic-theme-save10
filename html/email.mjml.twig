@@ -1,0 +1,101 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Cabin" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@600&display=swap"></mj-font>
+    <mj-attributes>
+      <mj-text font-weight="400" font-size="16px" color="#3c3c3c" line-height="22px"></mj-text>
+    </mj-attributes>
+    <mj-style>
+			.save10-webview a { color: #c5c5c5 !important; text-decoration: underline; }
+			.save10-text a { color: #000000 !important; }
+			.oldprice { color: #c5c5c5 !important; text-decoration: line-through; }
+			.newprice { color: #df2e2e !important; }
+		</mj-style>
+  </mj-head>
+  <mj-body background-color="#3E3E3E">
+    <mj-section background-url="{{ getAssetUrl('themes/'~template~'/assets/hero.jpg', null, null, true ) }}" background-size="cover" padding="10px 30px 110px 30px" background-size="cover" background-color="#101010">
+      <mj-column width="100%">
+        <mj-text align="center" font-size="12px" color="#8a8a8a" padding="0px 30px" css-class="save10-webview">{webview_text}</mj-text>
+        <mj-spacer height="100px" />
+        <mj-image align="center" width="180px" padding="0px" src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true ) }}" />
+        <mj-spacer height="50px" />
+        <mj-text font-family="Cabin, Helvetica, Arial, sans-serif" align="center" font-weight="600" font-size="70px" line-height="80px" color="#ffffff" padding="0px" letter-spacing="4px">SAVE <span style="color:#df2e2e;">10%</span> TODAY </mj-text>
+        <mj-spacer height="30px" />
+        <mj-text font-family="Cabin, Helvetica, Arial, sans-serif" align="center" line-height="28px" color="#ffffff" padding="0px">Don't miss this limited-time offer to elevate your home with stylish and affordable furnishings.</mj-text>
+        <mj-spacer height="30px" />
+        <mj-button font-family="Cabin, Helvetica, Arial, sans-serif" align="center" inner-padding="15px 35px" border-radius="0px" background-color="transparent" border="2px solid #ffffff" padding="0px" font-size="18px" href="#">SAVE10</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff">
+      <mj-column padding="30px">
+        <mj-text align="center" font-size="30px" padding="0px" font-weight="500" letter-spacing="3px" line-height="40px">BEST SELLERS</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0px 0px 50px 0px">
+      <mj-column>
+        <mj-image src="{{ getAssetUrl('themes/'~template~'/assets/prod1.png', null, null, true ) }}"></mj-image>
+        <mj-text align="center" color="#3c3c3c" font-weight="500" letter-spacing="2px" padding="10px">ADAM</mj-text>
+        <mj-text align="center" font-size="14px" padding="0px" line-height="10px">
+          <p class="oldprice">39.99€</p>
+          <p class="newprice">34.99€</p>
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{ getAssetUrl('themes/'~template~'/assets/prod2.png', null, null, true ) }}"></mj-image>
+        <mj-text align="center" color="#3c3c3c" font-weight="500" letter-spacing="2px" padding="10px">BERLIN</mj-text>
+        <mj-text align="center" padding="0px" line-height="10px">
+          <p class="oldprice">319.99€</p>
+          <p class="newprice">299.99€</p>
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{ getAssetUrl('themes/'~template~'/assets/prod3.png', null, null, true ) }}"></mj-image>
+        <mj-text align="center" color="#3c3c3c" font-weight="500" letter-spacing="2px" padding="10px">JACK</mj-text>
+        <mj-text align="center" padding="0px" line-height="10px">
+          <p class="oldprice">44.99€</p>
+          <p class="newprice">42.99€</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Pay later -->
+    <mj-section background-color="#e5d9bc" padding="0px">
+      <mj-column padding="0px" vertical-align="middle">
+        <mj-image fluid-on-mobile="true" src="{{ getAssetUrl('themes/'~template~'/assets/img1.png', null, null, true ) }}" padding="0px"></mj-image>
+      </mj-column>
+      <mj-column padding="34px" vertical-align="middle">
+        <mj-text align="left" font-size="26px" padding="0px" font-weight="500" letter-spacing="3px" line-height="30px" color="#44402e">SHOP NOW, PAY LATER</mj-text>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-text font-family="Cabin, Helvetica, Arial, sans-serif" align="left" line-height="28px" color="#44402e" padding="0px">Get what you love today, pay at your pace.</mj-text>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-button href="#" align="left" font-size="16px" border-radius="50px" padding="0px" inner-padding="10px 30px" color="#44402e" background-color="#ffffff">Learn more</mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- Info -->
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image height="32px" width="32px" src="{{ getAssetUrl('themes/'~template~'/assets/icon1.png', null, null, true ) }}"></mj-image>
+        <mj-text align="center" font-size="14px" color="#3c3c3c" letter-spacing="1px"> CUSTOMER SERVICE </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image height="32px" width="32px" src="{{ getAssetUrl('themes/'~template~'/assets/icon2.png', null, null, true ) }}"></mj-image>
+        <mj-text align="center" font-size="14px" letter-spacing="1px"> SATISFIED OR REFUNDED </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Footer -->
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-text align="center" font-size="14px" padding="0px"> Follow us on social media </mj-text>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-social padding="0px" icon-size="24px" icon-padding="8px" inner-padding="0px 10px 0px 0px" border-radius="300px">
+          <mj-social-element name="facebook"></mj-social-element>
+          <mj-social-element name="instagram"></mj-social-element>
+          <mj-social-element name="linkedin"></mj-social-element>
+          <mj-social-element name="pinterest"></mj-social-element>
+        </mj-social>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-text align="center" font-size="14px" padding="0px 30px" css-class="save10-text">{unsubscribe_text}</mj-text>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-text align="center" font-size="14px" padding="0px 30px" css-class="save10-text">Crafted with love by <a href="https://github.com/ricfreire">Ricardo Freire</a>. Images from Pexels by <a href="https://www.pexels.com/@medhat-ayad-122846/">Medhat Ayad</a> and <a href="https://www.pexels.com/@kseniachernaya/">Ksenia Chernaya</a>. </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
