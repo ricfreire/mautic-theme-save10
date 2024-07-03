@@ -4,7 +4,7 @@
   "type": "mautic-theme",
   "keywords": ["mautic","theme"],
   "extra": {
-    "install-directory-name": "feedback"
+    "install-directory-name": "save10"
   },
   "minimum-stability": "dev",
   "require": {
